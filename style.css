@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+body {
+  background-color: #000e1f;
+  color: #fff;
+}
+/* button {
+  outline: none;
+  border: none;
+  background-color: #000e1f;
+  color: #fff;
+  cursor: pointer;
+}
+ */
+.main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.app {
+  width: 100%;
+  margin-top: 4rem;
+  padding: 1rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 3rem;
+  min-height: calc(100vh - 5rem);
+}
+.app__container {
+  padding: 1rem 2rem;
+  width: 40rem;
+  height: 15rem;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem;
+  place-items: center;
+  background-color: #001d3d;
+  border: thin solid #003566;
+  border-radius: 5px;
+}
+.timer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#value {
+  font-size: 5rem;
+}
+#taskName {
+  font-size: 1.8rem;
+}
+.tasks__container,
+.form {
+  width: 100%;
+}
+#form__container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+button {
+  cursor: pointer;
+}
+#itTask,
+button {
+  outline: none;
+  color: #fff;
+  transition: all 0.2s;
+}
+button:hover {
+  background-color: #002853;
+  border: 1px solid #004f99;
+}
+#btnAdd:hover {
+  background-color: #00244a;
+  border: 1px solid #004f99;
+}
+#itTask,
+#btnAdd {
+  background-color: #001d3d;
+  border: thin solid #003566;
+}
+#itTask {
+  height: 24px;
+  width: 200px;
+  padding-left: 5px;
+  transition: border 0.1s;
+}
+#itTask:focus {
+  border: 2px solid #004f99;
+}
+#btnAdd {
+  padding: 3.25px;
+  transition: all 0.2s;
+}
+.workTime {
+  width: 40rem;
+  min-height: 3rem;
+  background-color: #001d3d;
+  border: thin solid #003566;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  display: grid;
+  gap: 1rem;
+}
+.task {
+  width: 80%;
+  height: 3rem;
+  margin: 0% auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  background-color: #00244a;
+  border: thin solid #004f99;
+  border-radius: 5px;
+  padding: 0.3rem;
+}
+.completed {
+  min-width: 100px;
+  display: grid;
+  place-items: center;
+}
+.btnStart {
+  width: 80px;
+  padding: 0.3rem 0;
+  font-size: 0.8rem;
+  background-color: #00244a;
+  border: thin solid #003566;
+}

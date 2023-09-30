@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pomodoro</title>
+  </head>
+  <body>
+    <main class="main">
+      <!-- timer -->
+      <div class="app">
+        <div class="app__container">
+          <div class="timer">
+            <div id="value"></div>
+            <div id="taskName"></div>
+          </div>
+          <!-- FORM -->
+          <div class="tasks__container">
+            <div class="form">
+              <form id="form__container">
+                <input required type="text" id="itTask" />
+                <button type="submit" id="btnAdd">Agregar Tarea</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- card-item -->
+        <div class="workTime"></div>
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
